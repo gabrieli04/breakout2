@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #1a1a2e; /* Fundo escuro */
+  font-family: 'Press Start 2P', cursive; /* Fonte retrô */
+  color: #e0e0e0; /* Cor do texto clara */
+  overflow: hidden; /* Evita barras de rolagem */
+}
+
+.game-container {
+  text-align: center;
+  background-color: #0f0f1c; /* Fundo mais escuro para o container */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.5); /* Sombra verde neon */
+  border: 2px solid #00ff00; /* Borda verde neon */
+}
+
+h1 {
+  color: #00ff00; /* Título verde neon */
+  text-shadow: 0 0 10px #00ff00;
+  margin-bottom: 20px;
+}
+
+.score-board {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+
+canvas {
+  background-color: #000; /* Fundo preto para o canvas */
+  border: 2px solid #00ff00; /* Borda verde neon */
+  display: block; /* Remove espaço extra abaixo do canvas */
+  margin: 0 auto;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.5); /* Sombra para o canvas */
+  /* Adicionado para o efeito de escurecimento */
+  transition: filter 0.5s ease-in-out;
+}
+
+/* Nova classe para escurecer o canvas */
+.game-over-effect {
+  filter: brightness(0.5); /* Escurece o canvas */
+}
+
+
+#reiniciar-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1em;
+  background-color: #00ff00; /* Botão verde neon */
+  color: #1a1a2e; /* Texto escuro */
+  border: 2px solid #00ff00;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
+}
+
+#reiniciar-btn:hover {
+  background-color: #1a1a2e;
+  color: #00ff00;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.9);
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
